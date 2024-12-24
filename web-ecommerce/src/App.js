@@ -4,17 +4,17 @@ import { FiShoppingCart, FiPlus, FiMinus, FiStar, FiX, FiClock, FiCheck, FiTruck
 const mockProducts = [
   {
     id: 1,
-    title: "Premium Wireless Headphones",
-    price: 299.99,
-    originalPrice: 399.99,
-    description: "High-quality wireless headphones with noise cancellation features and premium sound quality.",
-    image: "https://images.unsplash.com/photo-1505740420928-5e560c06d30e",
+    title: "Licuadora Portatil Fresh Juice",
+    price: 59999.99,
+    originalPrice: 100000.99,
+    description: "Batidora de alta calidad y potencia, un diseño unico y funcional.",
+    image: "https://cdn.discordapp.com/attachments/683166439322026190/1321042197436436565/H4145f31b83994c388a2572b2d4fe4d1fK.png?ex=676bcbeb&is=676a7a6b&hm=5cc0cd355a4bfbc754a1c27137f2a242bba36a6bf5d6680c2b73ebf5bd59ab86&",
     rating: 4.5,
     stock: 8,
     landingPage: "https://example.com/headphones",
     reviews: [
-      { id: 1, user: "John D.", rating: 5, comment: "Excellent sound quality!" },
-      { id: 2, user: "Sarah M.", rating: 4, comment: "Great battery life." }
+      { id: 1, user: "John D.", rating: 5, comment: "Exelente calidad!" },
+      { id: 2, user: "Sarah M.", rating: 4, comment: "Puedo tomar mis batidos en el trabajo." }
     ]
   },
   {
