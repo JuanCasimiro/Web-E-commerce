@@ -4,10 +4,10 @@ import { FiShoppingCart, FiPlus, FiMinus, FiStar, FiX, FiClock, FiCheck, FiTruck
 const mockProducts = [
   {
     id: 1,
-    title: "Licuadora Portatil Fresh Juice",
+    title: "Batidora Portátil Recargable - Mezclas Perfectas en Cualquier Lugar",
     price: 59999.99,
     originalPrice: 100000.99,
-    description: "Batidora de alta calidad y potencia, un diseño unico y funcional.",
+    description: "Lleva tu nutrición a otro nivel con esta batidora portátil recargable, ideal para smoothies, batidos de proteínas y jugos frescos. Compacta, ligera y fácil de transportar, es perfecta para usar en el gimnasio, la oficina o de viaje. Cuenta con un motor potente, cuchillas de acero inoxidable y una batería de larga duración que se carga fácilmente vía USB. ¡Prepara tus bebidas favoritas en segundos con solo presionar un botón! Disponible en colores modernos y diseño elegante, será tu aliada perfecta para un estilo de vida saludable y dinámico.",
     image: "https://cdn.discordapp.com/attachments/683166439322026190/1321042197436436565/H4145f31b83994c388a2572b2d4fe4d1fK.png?ex=676bcbeb&is=676a7a6b&hm=5cc0cd355a4bfbc754a1c27137f2a242bba36a6bf5d6680c2b73ebf5bd59ab86&",
     rating: 4.5,
     stock: 8,
@@ -19,10 +19,10 @@ const mockProducts = [
   },
   {
     id: 2,
-    title: "Cafetera expreso portatil, capsula y cafe molido",
+    title: "Cafetera Portátil para Espresso - Disfruta tu Café en Cualquier Lugar",
     price: 79999.99,
     originalPrice: 119999.99,
-    description: "Tu cafe va a donde lo necesites, olvidate de ese horrible cafe instantaneo.",
+    description: "Lleva el sabor del café espresso contigo donde sea que vayas con esta cafetera portátil y compacta. Diseñada para los amantes del café en movimiento, esta cafetera es ligera, fácil de usar y no requiere electricidad. Con solo presionar un botón, puedes preparar un café perfectamente cremoso en cuestión de minutos. Ideal para viajes, oficina o actividades al aire libre. Compatible con café molido o cápsulas, esta cafetera garantiza una experiencia de café fresca y deliciosa donde quiera que estés.",
     image: "https://cdn.discordapp.com/attachments/683166439322026190/1321042342886641694/Hf9c02c8af3cf4e2fa529bcbcb10eed67K.png?ex=676bcc0e&is=676a7a8e&hm=6e0cc95a5719bd2ec08c85a64f879d5d60725e8db3f5466ff7ca9c8416c29552&",
     rating: 4.2,
     stock: 15,
