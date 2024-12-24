@@ -129,9 +129,12 @@ const EcommerceStore = () => {
   };
 
   // Filter products based on selected category
-  const filteredProducts = selectedCategory === "Todos"
-    ? products
-    : products.filter(product => product.category === selectedCategory);
+  const filteredProducts = products.filter(product => {
+    const matchesSearch = product.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
+                         product.description.toLowerCase().includes(searchQuery.toLowerCase());
+    const matchesCategory = selectedCategory === "Todos" || product.category === selectedCategory;
+    return matchesSearch && matchesCategory;
+  });
 
 
   const addToCart = (product) => {
