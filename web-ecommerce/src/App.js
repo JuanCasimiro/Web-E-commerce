@@ -111,9 +111,9 @@ const EcommerceStore = () => {
   };
 
   const getStockStatus = (stock) => {
-    if (stock <= 5) return { text: "Only a few left!", color: "text-red-600" };
-    if (stock <= 10) return { text: "Limited stock", color: "text-orange-500" };
-    return { text: "In Stock", color: "text-green-600" };
+    if (stock <= 5) return { text: "Ultimas unidades!", color: "text-red-600" };
+    if (stock <= 10) return { text: "Stock Limitado", color: "text-orange-500" };
+    return { text: "En Stock", color: "text-green-600" };
   };
 
   const addToCart = (product) => {
@@ -165,7 +165,7 @@ const EcommerceStore = () => {
           />
           {discount > 0 && (
             <div className="absolute top-2 right-2 bg-[#00B4D8] text-white px-3 py-1 rounded-full text-sm font-bold">
-              Save {discount}%
+              Ahorro {discount}%
             </div>
           )}
         </div>
@@ -188,13 +188,13 @@ const EcommerceStore = () => {
             onClick={() => setSelectedProduct(product)}
             className="text-[#00B4D8] hover:text-[#0096b5] font-medium"
           >
-            View Details
+            Ver Detalles
           </button>
           <button
             onClick={() => addToCart(product)}
             className="bg-[#4CAF50] text-white px-4 py-2 rounded-md hover:bg-[#388E3C] transition-colors"
           >
-            Add to Cart
+            Agregar al carro
           </button>
         </div>
       </div>
@@ -279,7 +279,7 @@ const EcommerceStore = () => {
                 className="w-full bg-[#00B4D8] text-white py-3 rounded-md hover:bg-[#0096b5] transition-colors duration-200 text-center flex items-center justify-center"
               >
                 <FiExternalLink className="mr-2" />
-                Visit Product Page
+                Ver web del Producto
               </a>
             </div>
           </div>
