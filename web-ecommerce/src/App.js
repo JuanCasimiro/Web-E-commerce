@@ -53,7 +53,7 @@ const mockProducts = [
     price: 9999,
     originalPrice: 15000,
     description: "¡Mantén a tu gato entretenido y activo con este juguete interactivo! Diseñado para estimular su instinto cazador, este juguete es perfecto para horas de diversión. Ideal para gatos de todas las edades, ayuda a reducir el estrés, prevenir el aburrimiento y promover el ejercicio. Su diseño resistente y seguro garantiza que tu mascota pueda jugar sin preocupaciones. ¡Haz feliz a tu minino hoy mismo!",
-    image: "https://cdn.discordapp.com/attachments/683166439322026190/1321042453414940714/H1fdad88ae5cc44c2814ed0a3444856aeB.png?ex=676bcc28&is=676a7aa8&hm=c1f71f735cac588fb1ba38e664b24d68722b2133ada9143c25ae12c272ad34d7&",
+    image: "https://cdn.discordapp.com/attachments/683166439322026190/1321042548952666223/Hd131b2cd35ca405b985f34e1997cb957z.png?ex=676bcc3f&is=676a7abf&hm=8c03bc082b1d64550eb0efec2d4e73fe8e75d86b038bfdc8fadcc01557ca6e23&",
     rating: 4.8,
     stock: 5,
     landingPage: "https://example.com/camera",
