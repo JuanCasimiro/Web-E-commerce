@@ -19,32 +19,77 @@ const mockProducts = [
   },
   {
     id: 2,
-    title: "Smart Fitness Watch",
-    price: 199.99,
-    originalPrice: 249.99,
-    description: "Track your fitness goals with this advanced smartwatch featuring heart rate monitoring and GPS.",
-    image: "https://images.unsplash.com/photo-1523275335684-37898b6baf30",
+    title: "Cafetera expreso portatil, capsula y cafe molido",
+    price: 79999.99,
+    originalPrice: 119999.99,
+    description: "Tu cafe va a donde lo necesites, olvidate de ese horrible cafe instantaneo.",
+    image: "https://cdn.discordapp.com/attachments/683166439322026190/1321042342886641694/Hf9c02c8af3cf4e2fa529bcbcb10eed67K.png?ex=676bcc0e&is=676a7a8e&hm=6e0cc95a5719bd2ec08c85a64f879d5d60725e8db3f5466ff7ca9c8416c29552&",
     rating: 4.2,
     stock: 15,
     landingPage: "https://example.com/smartwatch",
     reviews: [
-      { id: 1, user: "Mike R.", rating: 4, comment: "Good fitness tracking features" },
-      { id: 2, user: "Emily L.", rating: 5, comment: "Love the design!" }
+      { id: 1, user: "Mike R.", rating: 4, comment: "amo mi cafetera, la uso en mis trekings" },
+      { id: 2, user: "Emily L.", rating: 5, comment: "Buena calidad!" }
     ]
   },
   {
     id: 3,
-    title: "Professional Camera",
-    price: 899.99,
-    originalPrice: 1099.99,
-    description: "Capture stunning photos with this professional-grade digital camera featuring advanced imaging technology.",
-    image: "https://images.unsplash.com/photo-1516035069371-29a1b244cc32",
+    title: "Comedero Automático Inteligente para Mascotas - Alimentación Fácil y Programada",
+    price: 178999,
+    originalPrice: 200000,
+    description: "¡Cuida de tu mascota incluso cuando no estés en casa! Este comedero automático combina diseño moderno y tecnología inteligente para garantizar que tu mejor amigo reciba sus comidas a tiempo. Con capacidad ajustable, temporizador programable y materiales seguros para alimentos, es ideal para perros y gatos. Mantén su alimentación bajo control y evita preocupaciones, ¡tu mascota estará feliz y bien alimentada!",
+    image: "https://cdn.discordapp.com/attachments/683166439322026190/1321042453414940714/H1fdad88ae5cc44c2814ed0a3444856aeB.png?ex=676bcc28&is=676a7aa8&hm=c1f71f735cac588fb1ba38e664b24d68722b2133ada9143c25ae12c272ad34d7&",
     rating: 4.8,
     stock: 5,
     landingPage: "https://example.com/camera",
     reviews: [
-      { id: 1, user: "David P.", rating: 5, comment: "Amazing image quality" },
-      { id: 2, user: "Lisa K.", rating: 4, comment: "Great for professional use" }
+      { id: 1, user: "David P.", rating: 5, comment: "Perfecto para mis días ocupados" },
+      { id: 2, user: "Lisa K.", rating: 4, comment: "Tengo dos gatos y este comedero es súper práctico. La capacidad es ideal, y el temporizador me da tranquilidad." }
+    ]
+  },
+  {
+    id: 4,
+    title: "Juguete Interactivo para Gatos - Diversión y Ejercicio Asegurados",
+    price: 9999,
+    originalPrice: 15000,
+    description: "¡Mantén a tu gato entretenido y activo con este juguete interactivo! Diseñado para estimular su instinto cazador, este juguete es perfecto para horas de diversión. Ideal para gatos de todas las edades, ayuda a reducir el estrés, prevenir el aburrimiento y promover el ejercicio. Su diseño resistente y seguro garantiza que tu mascota pueda jugar sin preocupaciones. ¡Haz feliz a tu minino hoy mismo!",
+    image: "https://cdn.discordapp.com/attachments/683166439322026190/1321042453414940714/H1fdad88ae5cc44c2814ed0a3444856aeB.png?ex=676bcc28&is=676a7aa8&hm=c1f71f735cac588fb1ba38e664b24d68722b2133ada9143c25ae12c272ad34d7&",
+    rating: 4.8,
+    stock: 5,
+    landingPage: "https://example.com/camera",
+    reviews: [
+      { id: 1, user: "David P.", rating: 5, comment: "Ideal para gatos activos, Mi gato no puede dejar de jugar." },
+      { id: 2, user: "Lisa K.", rating: 4, comment: "Compré este juguete para mis dos gatos y les encanta. Se entretienen muchísimo." }
+    ]
+  },
+  {
+    id: 5,
+    title: "Lima de Uñas Eléctrica para Mascotas - Suave, Segura y Sin Estrés",
+    price: 52999,
+    originalPrice: 65000,
+    description: "¡Haz del cuidado de uñas una experiencia sencilla y tranquila para tu mascota! Esta lima eléctrica para perros y gatos cuenta con un motor silencioso y suave, ideal para evitar el estrés. Su diseño ergonómico y portátil hace que sea fácil de usar en casa. Incluye múltiples cabezales para adaptarse al tamaño de las uñas y garantizar un limado seguro y efectivo.",
+    image: "https://cdn.discordapp.com/attachments/683166439322026190/1321042632637550623/H1f17eebed8ba45daa421095485543e6a0.png?ex=676bcc53&is=676a7ad3&hm=3eca7b79e6238fa40617c1b34c1bb3c2a2856fb64c978c782e8c50241e8bf1a2&",
+    rating: 4.8,
+    stock: 5,
+    landingPage: "https://example.com/camera",
+    reviews: [
+      { id: 1, user: "David P.", rating: 5, comment: "Muy cómoda de usar." },
+      { id: 2, user: "Lisa K.", rating: 4, comment: "Mi gato siempre se ponía nervioso al cortar sus uñas, pero con esta lima todo cambió. Es suave, segura y no hace ruido molesto. ¡Un gran alivio!" }
+    ]
+  },
+  {
+    id: 6,
+    title: "Cierra Puertas Automático Universal - Seguridad y Comodidad en Cada Apertura",
+    price: 9999.99,
+    originalPrice: 13000,
+    description: "¡Olvídate de puertas abiertas accidentalmente! Este cierra puertas automático es ideal para mantener la seguridad y privacidad de tu hogar u oficina. Con instalación sencilla y diseño ajustable, se adapta a cualquier tipo de puerta. Fabricado con materiales duraderos, garantiza un cierre suave y silencioso. Perfecto para ahorrar energía y evitar golpes innecesarios. Dale un toque práctico y funcional a tus espacios.",
+    image: "https://cdn.discordapp.com/attachments/683166439322026190/1321043121739534426/H749903a8db464adf8f1a2b0681ed16faR.png?ex=676bccc8&is=676a7b48&hm=6f5b1c6597cb955869064ab4858595c1bb4a72214303997975ea8a510596c098&",
+    rating: 4.8,
+    stock: 5,
+    landingPage: "https://example.com/camera",
+    reviews: [
+      { id: 1, user: "David P.", rating: 5, comment: "Lo instalé en la puerta de mi cocina y funciona de maravilla. Ahora no tengo que preocuparme de que quede abierta por error. Súper práctico." },
+      { id: 2, user: "Lisa K.", rating: 4, comment: "Mis hijos solían dejar la puerta de mi habitacion abierta, pero con este dispositivo ya no pasa." }
     ]
   }
 ];
