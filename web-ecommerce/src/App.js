@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { FiShoppingCart, FiPlus, FiMinus, FiStar, FiX, FiClock, FiCheck, FiTruck, FiExternalLink } from "react-icons/fi";
+import { FiShoppingCart, FiPlus, FiMinus, FiStar, FiX, FiClock, FiCheck, FiTruck, FiExternalLink, FiSearch } from "react-icons/fi";
 
 const mockProducts = [
   {
@@ -11,6 +11,7 @@ const mockProducts = [
     image: "https://cdn.discordapp.com/attachments/683166439322026190/1321042197436436565/H4145f31b83994c388a2572b2d4fe4d1fK.png?ex=676bcbeb&is=676a7a6b&hm=5cc0cd355a4bfbc754a1c27137f2a242bba36a6bf5d6680c2b73ebf5bd59ab86&",
     rating: 4.5,
     stock: 8,
+    category: "Cocina",
     landingPage: "https://example.com/headphones",
     reviews: [
       { id: 1, user: "John D.", rating: 5, comment: "Exelente calidad!" },
@@ -26,6 +27,7 @@ const mockProducts = [
     image: "https://cdn.discordapp.com/attachments/683166439322026190/1321042342886641694/Hf9c02c8af3cf4e2fa529bcbcb10eed67K.png?ex=676bcc0e&is=676a7a8e&hm=6e0cc95a5719bd2ec08c85a64f879d5d60725e8db3f5466ff7ca9c8416c29552&",
     rating: 4.2,
     stock: 15,
+    category: "Cocina",
     landingPage: "https://example.com/smartwatch",
     reviews: [
       { id: 1, user: "Mike R.", rating: 4, comment: "amo mi cafetera, la uso en mis trekings" },
@@ -41,6 +43,7 @@ const mockProducts = [
     image: "https://cdn.discordapp.com/attachments/683166439322026190/1321042453414940714/H1fdad88ae5cc44c2814ed0a3444856aeB.png?ex=676bcc28&is=676a7aa8&hm=c1f71f735cac588fb1ba38e664b24d68722b2133ada9143c25ae12c272ad34d7&",
     rating: 4.8,
     stock: 5,
+    category: "Mascotas",
     landingPage: "https://example.com/camera",
     reviews: [
       { id: 1, user: "David P.", rating: 5, comment: "Perfecto para mis días ocupados" },
@@ -56,6 +59,7 @@ const mockProducts = [
     image: "https://cdn.discordapp.com/attachments/683166439322026190/1321042548952666223/Hd131b2cd35ca405b985f34e1997cb957z.png?ex=676bcc3f&is=676a7abf&hm=8c03bc082b1d64550eb0efec2d4e73fe8e75d86b038bfdc8fadcc01557ca6e23&",
     rating: 4.8,
     stock: 5,
+    category: "Mascotas",
     landingPage: "https://example.com/camera",
     reviews: [
       { id: 1, user: "David P.", rating: 5, comment: "Ideal para gatos activos, Mi gato no puede dejar de jugar." },
@@ -71,6 +75,7 @@ const mockProducts = [
     image: "https://cdn.discordapp.com/attachments/683166439322026190/1321042632637550623/H1f17eebed8ba45daa421095485543e6a0.png?ex=676bcc53&is=676a7ad3&hm=3eca7b79e6238fa40617c1b34c1bb3c2a2856fb64c978c782e8c50241e8bf1a2&",
     rating: 4.8,
     stock: 5,
+    category: "Mascotas",
     landingPage: "https://example.com/camera",
     reviews: [
       { id: 1, user: "David P.", rating: 5, comment: "Muy cómoda de usar." },
@@ -86,6 +91,7 @@ const mockProducts = [
     image: "https://cdn.discordapp.com/attachments/683166439322026190/1321043121739534426/H749903a8db464adf8f1a2b0681ed16faR.png?ex=676bccc8&is=676a7b48&hm=6f5b1c6597cb955869064ab4858595c1bb4a72214303997975ea8a510596c098&",
     rating: 4.8,
     stock: 5,
+    category: "Bolucompras",
     landingPage: "https://example.com/camera",
     reviews: [
       { id: 1, user: "David P.", rating: 5, comment: "Lo instalé en la puerta de mi cocina y funciona de maravilla. Ahora no tengo que preocuparme de que quede abierta por error. Súper práctico." },
@@ -99,6 +105,12 @@ const EcommerceStore = () => {
   const [cart, setCart] = useState([]);
   const [selectedProduct, setSelectedProduct] = useState(null);
   const [isCartOpen, setIsCartOpen] = useState(false);
+  const [selectedCategory, setSelectedCategory] = useState("Todos");
+  const [searchQuery, setSearchQuery] = useState("");
+
+
+  
+  const categories = ["Todos", ...new Set(products.map(product => product.category))];
 
   const colors = {
     primary: "#00B4D8",
@@ -115,6 +127,12 @@ const EcommerceStore = () => {
     if (stock <= 10) return { text: "Stock Limitado", color: "text-orange-500" };
     return { text: "En Stock", color: "text-green-600" };
   };
+
+  // Filter products based on selected category
+  const filteredProducts = selectedCategory === "Todos"
+    ? products
+    : products.filter(product => product.category === selectedCategory);
+
 
   const addToCart = (product) => {
     const existingItem = cart.find((item) => item.id === product.id);
@@ -370,25 +388,54 @@ const EcommerceStore = () => {
   return (
     <div className="min-h-screen bg-[#E0F7FA]">
       <header className="bg-white shadow-sm sticky top-0 z-40">
-        <div className="max-w-7xl mx-auto px-4 py-6 flex justify-between items-center">
-          <h1 className="text-3xl font-bold text-[#00B4D8]">Backlabs</h1>
-          <button
-            onClick={() => setIsCartOpen(true)}
-            className="relative p-2 text-[#00B4D8] hover:text-[#0096b5]"
-          >
-            <FiShoppingCart size={24} />
-            {cart.length > 0 && (
-              <span className="absolute -top-1 -right-1 bg-[#4CAF50] text-white w-5 h-5 rounded-full flex items-center justify-center text-xs">
-                {cart.length}
-              </span>
-            )}
-          </button>
+        <div className="max-w-7xl mx-auto px-4 py-6">
+          <div className="flex items-center justify-between space-x-4">
+            <h1 className="text-3xl font-bold text-[#00B4D8]">Backlabs</h1>
+            
+            <div className="flex-1 max-w-xl relative">
+              <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                <FiSearch className="h-5 w-5 text-gray-400" />
+              </div>
+              <input
+                type="text"
+                placeholder="Buscar productos..."
+                value={searchQuery}
+                onChange={(e) => setSearchQuery(e.target.value)}
+                className="block w-full pl-10 pr-3 py-2 border border-gray-300 rounded-lg leading-5 bg-white placeholder-gray-500 focus:outline-none focus:ring-1 focus:ring-[#00B4D8] focus:border-[#00B4D8] text-sm"
+              />
+            </div>
+
+            <div className="flex items-center space-x-4">
+              <div className="flex space-x-2">
+                {categories.map((category) => (
+                  <button
+                    key={category}
+                    onClick={() => setSelectedCategory(category)}
+                    className={`px-4 py-2 rounded-md transition-colors ${selectedCategory === category ? "bg-[#00B4D8] text-white" : "bg-gray-100 text-gray-700 hover:bg-gray-200"}`}
+                  >
+                    {category}
+                  </button>
+                ))}
+              </div>
+              <button
+                onClick={() => setIsCartOpen(true)}
+                className="relative p-2 text-[#00B4D8] hover:text-[#0096b5]"
+              >
+                <FiShoppingCart size={24} />
+                {cart.length > 0 && (
+                  <span className="absolute -top-1 -right-1 bg-[#4CAF50] text-white w-5 h-5 rounded-full flex items-center justify-center text-xs">
+                    {cart.length}
+                  </span>
+                )}
+              </button>
+            </div>
+          </div>
         </div>
       </header>
 
       <main className="max-w-7xl mx-auto px-4 py-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {products.map((product) => (
+          {filteredProducts.map((product) => (
             <ProductCard key={product.id} product={product} />
           ))}
         </div>
