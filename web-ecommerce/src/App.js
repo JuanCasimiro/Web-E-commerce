@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import { EcommerceStore } from './home';
+import EcommerceStore from "./components/EcommerceStore";
 
 function App() {
   return (
