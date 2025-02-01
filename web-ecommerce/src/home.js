@@ -4,98 +4,98 @@ import { FiShoppingCart, FiPlus, FiMinus, FiStar, FiX, FiClock, FiCheck, FiTruck
 const mockProducts = [
   {
     id: 1,
-    title: "Batidora Portátil Recargable - Mezclas Perfectas en Cualquier Lugar",
-    price: 59999.99,
-    originalPrice: 100000.99,
-    description: "Lleva tu nutrición a otro nivel con esta batidora portátil recargable, ideal para smoothies, batidos de proteínas y jugos frescos. Compacta, ligera y fácil de transportar, es perfecta para usar en el gimnasio, la oficina o de viaje. Cuenta con un motor potente, cuchillas de acero inoxidable y una batería de larga duración que se carga fácilmente vía USB. ¡Prepara tus bebidas favoritas en segundos con solo presionar un botón! Disponible en colores modernos y diseño elegante, será tu aliada perfecta para un estilo de vida saludable y dinámico.",
-    image: "https://cdn.discordapp.com/attachments/683166439322026190/1321042197436436565/H4145f31b83994c388a2572b2d4fe4d1fK.png?ex=676bcbeb&is=676a7a6b&hm=5cc0cd355a4bfbc754a1c27137f2a242bba36a6bf5d6680c2b73ebf5bd59ab86&",
+    title: "Portable Blender - Perfect Mixes Anywhere",
+    price: 59.99,
+    originalPrice: 100.99,
+    description: "Take your nutrition to the next level with this rechargeable portable blender, ideal for smoothies, protein shakes, and fresh juices. Compact, lightweight, and easy to carry, it's perfect for use at the gym, office, or travel. It features a powerful motor, stainless steel blades, and a long-lasting battery that charges easily via USB. Prepare your favorite drinks in seconds with just the press of a button! Available in modern colors and elegant design, it will be your perfect ally for a healthy and dynamic lifestyle.",
+    image: "https://m.media-amazon.com/images/I/61ltwzr3oLL._AC_SL1500_.jpg",
     rating: 4.5,
     stock: 8,
-    category: "Cocina",
-    landingPage: "/producto/1",
+    category: "Kitchen",
+    landingPage: "/product/1",
     reviews: [
-      { id: 1, user: "John D.", rating: 5, comment: "Exelente calidad!" },
-      { id: 2, user: "Sarah M.", rating: 4, comment: "Puedo tomar mis batidos en el trabajo." }
+      { id: 1, user: "John D.", rating: 5, comment: "Excellent quality!" },
+      { id: 2, user: "Sarah M.", rating: 4, comment: "I can take my shakes to work." }
     ]
   },
   {
     id: 2,
-    title: "Cafetera Portátil para Espresso - Disfruta tu Café en Cualquier Lugar",
-    price: 79999.99,
-    originalPrice: 119999.99,
-    description: "Lleva el sabor del café espresso contigo donde sea que vayas con esta cafetera portátil y compacta. Diseñada para los amantes del café en movimiento, esta cafetera es ligera, fácil de usar y no requiere electricidad. Con solo presionar un botón, puedes preparar un café perfectamente cremoso en cuestión de minutos. Ideal para viajes, oficina o actividades al aire libre. Compatible con café molido o cápsulas, esta cafetera garantiza una experiencia de café fresca y deliciosa donde quiera que estés.",
-    image: "https://cdn.discordapp.com/attachments/683166439322026190/1321042342886641694/Hf9c02c8af3cf4e2fa529bcbcb10eed67K.png?ex=676bcc0e&is=676a7a8e&hm=6e0cc95a5719bd2ec08c85a64f879d5d60725e8db3f5466ff7ca9c8416c29552&",
+    title: "Portable Espresso Maker - Enjoy Coffee Anywhere",
+    price: 79.99,
+    originalPrice: 119.99,
+    description: "Take the taste of espresso coffee with you wherever you go with this portable and compact coffee maker. Designed for coffee lovers on the go, this coffee maker is lightweight, easy to use, and requires no electricity. With just the press of a button, you can brew a perfectly creamy coffee in minutes. Ideal for travel, office, or outdoor activities. Compatible with ground coffee or capsules, this coffee maker guarantees a fresh and delicious coffee experience wherever you are.",
+    image: "https://m.media-amazon.com/images/I/611lAZSw9-L._AC_SL1001_.jpg",
     rating: 4.2,
     stock: 15,
-    category: "Cocina",
+    category: "Kitchen",
     landingPage: "https://example.com/smartwatch",
     reviews: [
-      { id: 1, user: "Mike R.", rating: 4, comment: "amo mi cafetera, la uso en mis trekings" },
-      { id: 2, user: "Emily L.", rating: 5, comment: "Buena calidad!" }
+      { id: 1, user: "Mike R.", rating: 4, comment: "I love my coffee maker, I use it on my treks." },
+      { id: 2, user: "Emily L.", rating: 5, comment: "Good quality!" }
     ]
   },
   {
     id: 3,
-    title: "Comedero Automático Inteligente para Mascotas - Alimentación Fácil y Programada",
-    price: 178999,
-    originalPrice: 200000,
-    description: "¡Cuida de tu mascota incluso cuando no estés en casa! Este comedero automático combina diseño moderno y tecnología inteligente para garantizar que tu mejor amigo reciba sus comidas a tiempo. Con capacidad ajustable, temporizador programable y materiales seguros para alimentos, es ideal para perros y gatos. Mantén su alimentación bajo control y evita preocupaciones, ¡tu mascota estará feliz y bien alimentada!",
-    image: "https://cdn.discordapp.com/attachments/683166439322026190/1321042453414940714/H1fdad88ae5cc44c2814ed0a3444856aeB.png?ex=676bcc28&is=676a7aa8&hm=c1f71f735cac588fb1ba38e664b24d68722b2133ada9143c25ae12c272ad34d7&",
+    title: "Smart Pet Feeder - Easy and Scheduled Feeding",
+    price: 178.99,
+    originalPrice: 200.00,
+    description: "Take care of your pet even when you're not at home! This automatic feeder combines modern design and smart technology to ensure your best friend gets their meals on time. With adjustable capacity, programmable timer, and food-safe materials, it's ideal for dogs and cats. Keep their feeding under control and avoid worries, your pet will be happy and well-fed!",
+    image: "https://m.media-amazon.com/images/I/81z+W6-vHxL._AC_SL1500_.jpg",
     rating: 4.8,
     stock: 5,
-    category: "Mascotas",
+    category: "Pets",
     landingPage: "https://example.com/camera",
     reviews: [
-      { id: 1, user: "David P.", rating: 5, comment: "Perfecto para mis días ocupados" },
-      { id: 2, user: "Lisa K.", rating: 4, comment: "Tengo dos gatos y este comedero es súper práctico. La capacidad es ideal, y el temporizador me da tranquilidad." }
+      { id: 1, user: "David P.", rating: 5, comment: "Perfect for my busy days." },
+      { id: 2, user: "Lisa K.", rating: 4, comment: "I have two cats and this feeder is super practical. The capacity is ideal, and the timer gives me peace of mind." }
     ]
   },
   {
     id: 4,
-    title: "Juguete Interactivo para Gatos - Diversión y Ejercicio Asegurados",
-    price: 9999,
-    originalPrice: 15000,
-    description: "¡Mantén a tu gato entretenido y activo con este juguete interactivo! Diseñado para estimular su instinto cazador, este juguete es perfecto para horas de diversión. Ideal para gatos de todas las edades, ayuda a reducir el estrés, prevenir el aburrimiento y promover el ejercicio. Su diseño resistente y seguro garantiza que tu mascota pueda jugar sin preocupaciones. ¡Haz feliz a tu minino hoy mismo!",
-    image: "https://cdn.discordapp.com/attachments/683166439322026190/1321042548952666223/Hd131b2cd35ca405b985f34e1997cb957z.png?ex=676bcc3f&is=676a7abf&hm=8c03bc082b1d64550eb0efec2d4e73fe8e75d86b038bfdc8fadcc01557ca6e23&",
+    title: "Interactive Cat Toy - Guaranteed Fun and Exercise",
+    price: 9.99,
+    originalPrice: 15.00,
+    description: "Keep your cat entertained and active with this interactive toy! Designed to stimulate their hunting instinct, this toy is perfect for hours of fun. Ideal for cats of all ages, it helps reduce stress, prevent boredom, and promote exercise. Its durable and safe design ensures your pet can play without worries. Make your kitty happy today!",
+    image: "https://m.media-amazon.com/images/I/51aSd-dKtJL._AC_SL1500_.jpg",
     rating: 4.8,
     stock: 5,
-    category: "Mascotas",
+    category: "Pets",
     landingPage: "https://example.com/camera",
     reviews: [
-      { id: 1, user: "David P.", rating: 5, comment: "Ideal para gatos activos, Mi gato no puede dejar de jugar." },
-      { id: 2, user: "Lisa K.", rating: 4, comment: "Compré este juguete para mis dos gatos y les encanta. Se entretienen muchísimo." }
+      { id: 1, user: "David P.", rating: 5, comment: "Ideal for active cats, my cat can't stop playing." },
+      { id: 2, user: "Lisa K.", rating: 4, comment: "I bought this toy for my two cats and they love it. They are very entertained." }
     ]
   },
   {
     id: 5,
-    title: "Lima de Uñas Eléctrica para Mascotas - Suave, Segura y Sin Estrés",
-    price: 52999,
-    originalPrice: 65000,
-    description: "¡Haz del cuidado de uñas una experiencia sencilla y tranquila para tu mascota! Esta lima eléctrica para perros y gatos cuenta con un motor silencioso y suave, ideal para evitar el estrés. Su diseño ergonómico y portátil hace que sea fácil de usar en casa. Incluye múltiples cabezales para adaptarse al tamaño de las uñas y garantizar un limado seguro y efectivo.",
-    image: "https://cdn.discordapp.com/attachments/683166439322026190/1321042632637550623/H1f17eebed8ba45daa421095485543e6a0.png?ex=676bcc53&is=676a7ad3&hm=3eca7b79e6238fa40617c1b34c1bb3c2a2856fb64c978c782e8c50241e8bf1a2&",
+    title: "Electric Pet Nail Grinder - Gentle, Safe, and Stress-Free",
+    price: 52.99,
+    originalPrice: 65.00,
+    description: "Make nail care a simple and calm experience for your pet! This electric nail grinder for dogs and cats features a quiet and gentle motor, ideal for avoiding stress. Its ergonomic and portable design makes it easy to use at home. Includes multiple heads to fit the size of the nails and ensure safe and effective grinding.",
+    image: "https://i.ebayimg.com/images/g/p5AAAOSwUv9mMv30/s-l500.webp",
     rating: 4.8,
     stock: 5,
-    category: "Mascotas",
+    category: "Pets",
     landingPage: "https://example.com/camera",
     reviews: [
-      { id: 1, user: "David P.", rating: 5, comment: "Muy cómoda de usar." },
-      { id: 2, user: "Lisa K.", rating: 4, comment: "Mi gato siempre se ponía nervioso al cortar sus uñas, pero con esta lima todo cambió. Es suave, segura y no hace ruido molesto. ¡Un gran alivio!" }
+      { id: 1, user: "David P.", rating: 5, comment: "Very comfortable to use." },
+      { id: 2, user: "Lisa K.", rating: 4, comment: "My cat always got nervous when cutting his nails, but with this grinder everything changed. It's gentle, safe, and doesn't make annoying noise. A great relief!" }
     ]
   },
   {
     id: 6,
-    title: "Cierra Puertas Automático Universal - Seguridad y Comodidad en Cada Apertura",
-    price: 9999.99,
-    originalPrice: 13000,
-    description: "¡Olvídate de puertas abiertas accidentalmente! Este cierra puertas automático es ideal para mantener la seguridad y privacidad de tu hogar u oficina. Con instalación sencilla y diseño ajustable, se adapta a cualquier tipo de puerta. Fabricado con materiales duraderos, garantiza un cierre suave y silencioso. Perfecto para ahorrar energía y evitar golpes innecesarios. Dale un toque práctico y funcional a tus espacios.",
-    image: "https://cdn.discordapp.com/attachments/683166439322026190/1321043121739534426/H749903a8db464adf8f1a2b0681ed16faR.png?ex=676bccc8&is=676a7b48&hm=6f5b1c6597cb955869064ab4858595c1bb4a72214303997975ea8a510596c098&",
+    title: "Universal Automatic Door Closer - Security and Convenience",
+    price: 9.99,
+    originalPrice: 13.00,
+    description: "Forget about accidentally open doors! This automatic door closer is ideal for maintaining the security and privacy of your home or office. With easy installation and adjustable design, it fits any type of door. Made with durable materials, it ensures a smooth and silent closing. Perfect for saving energy and avoiding unnecessary slams. Add a practical and functional touch to your spaces.",
+    image: "https://m.media-amazon.com/images/I/41v2Ui-QZlL._AC_.jpg",
     rating: 4.8,
     stock: 5,
-    category: "Bolucompras",
+    category: "Home Improvement",
     landingPage: "https://example.com/camera",
     reviews: [
-      { id: 1, user: "David P.", rating: 5, comment: "Lo instalé en la puerta de mi cocina y funciona de maravilla. Ahora no tengo que preocuparme de que quede abierta por error. Súper práctico." },
-      { id: 2, user: "Lisa K.", rating: 4, comment: "Mis hijos solían dejar la puerta de mi habitacion abierta, pero con este dispositivo ya no pasa." }
+      { id: 1, user: "David P.", rating: 5, comment: "I installed it on my kitchen door and it works great. Now I don't have to worry about it being left open by mistake. Super practical." },
+      { id: 2, user: "Lisa K.", rating: 4, comment: "My kids used to leave the door open, but with this device it doesn't happen anymore." }
     ]
   }
 ];
